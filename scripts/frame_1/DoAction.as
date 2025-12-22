@@ -5,13 +5,6 @@ var keyListener = new Object();
 
 keyListener.onKeyDown = function()
 {
-   skip._visible = false;
-   skip1._visible = false;
-   skip2._visible = false;
-   skip3._visible = false;
-   skip4._visible = false;
-   skip5._visible = false;
-   skip6._visible = false;
 
    switch(Key.getAscii())
    {
@@ -21,7 +14,11 @@ keyListener.onKeyDown = function()
 
          skip._visible = true;
          skip1._visible = true;
-         
+         skip2._visible = false;
+         skip3._visible = false;
+         skip4._visible = false;
+         skip5._visible = false;
+         skip6._visible = false;
          break;
 
       // 2 -> Q56
@@ -31,6 +28,10 @@ keyListener.onKeyDown = function()
          skip._visible = true;
          skip1._visible = true;
          skip2._visible = true;
+         skip3._visible = false;
+         skip4._visible = false;
+         skip5._visible = false;
+         skip6._visible = false;
          break;
 
       // 3 -> Q68
@@ -41,6 +42,9 @@ keyListener.onKeyDown = function()
          skip1._visible = true;
          skip2._visible = true;
          skip3._visible = true;
+         skip4._visible = false;
+         skip5._visible = false;
+         skip6._visible = false;
          break;
          
       // 4 -> Q81
@@ -52,6 +56,8 @@ keyListener.onKeyDown = function()
          skip2._visible = true;
          skip3._visible = true;
          skip4._visible = true;
+         skip5._visible = false;
+         skip6._visible = false;
          break;
          
       // 5 -> Q84
@@ -63,6 +69,8 @@ keyListener.onKeyDown = function()
          skip2._visible = true;
          skip3._visible = true;
          skip4._visible = true;
+         skip5._visible = false;
+         skip6._visible = false;
          break;
 
       // 6 -> Q91
