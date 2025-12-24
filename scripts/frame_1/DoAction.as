@@ -165,4 +165,7 @@ keyListener.onKeyDown = function()
    Mouse.show();
 };
 
-Key.addListener(keyListener);
+if (!_global.listenerAdded) {
+   Key.addListener(keyListener);
+   _global.listenerAdded = true;
+}
